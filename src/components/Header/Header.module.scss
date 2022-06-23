@@ -1,0 +1,90 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/fonts';
+@import '../../assets/styles/mixins';
+
+.header {
+    background-color: $ebony;
+    color: $white;
+    font-family: $font-epilogue-regular;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+
+    &_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 65%;
+        width: 45%;
+
+        &_heading {
+            font-family: $font-epilogue-extrabold;
+            font-size: 72px;
+        }
+
+        &_text {
+            font-family: $font-epilogue-regular;
+            font-size: 16px;
+            color: #{$white}64;
+        }
+    }
+
+    &_btn {
+       all: unset;
+       cursor: pointer;
+    }
+}
+
+.btn {
+    @include button(138px, 48px, inherit, #{$white}24, $white);
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+
+    p {
+        padding: 0 0 0 15px;
+        font-family: $font-epilogue-bold;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1039px) {
+     .header {
+         &_btn {
+             display: none;
+         }
+
+         &_info {
+             width: 360px;
+             &_text {
+                 width: fit-content;
+                 line-height: 1.7;
+             }
+         }
+     }
+
+     .btn {
+         display: none;
+     }
+
+     .logo {
+         display: flex;
+         justify-content: center;
+     }
+}

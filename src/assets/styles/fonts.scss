@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Epilogue Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Epilogue Regular'),
+    url('../fonts/Epilogue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Epilogue Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Epilogue Bold'),
+    url('../fonts/Epilogue-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Epilogue Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Epilogue Black'),
+    url('../fonts/Epilogue-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Epilogue ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Epilogue ExtraBold'),
+    url('../fonts/Epilogue-ExtraBold.ttf') format('truetype');
+}
+
+$font-epilogue-regular: 'Epilogue Regular', Arial, sans-serif;
+$font-epilogue-bold: 'Epilogue Bold', Arial, sans-serif;
+$font-epilogue-black: 'Epilogue Black', Arial, sans-serif;
+$font-epilogue-extrabold: 'Epilogue ExtraBold', Arial, sans-serif;

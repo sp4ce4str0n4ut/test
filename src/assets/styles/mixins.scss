@@ -1,0 +1,14 @@
+@import './colors';
+@import './fonts';
+
+@mixin button($width, $height, $bg-color, $bd-color, $color) {
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    border: 1px solid $bd-color;
+    border-radius: 5px;
+    font-family: $font-epilogue-black;
+    font-size: 14px;
+    color: $color;
+    cursor: pointer;
+}

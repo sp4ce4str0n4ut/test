@@ -1,0 +1,18 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/fonts';
+@import '../../assets/styles/mixins';
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $rose-white;
+    border: 1px solid $conifer;
+    padding: 5% 5% 10% 5%;
+
+    &_btn {
+        @include button(170px, 48px, $white, $white, $maroon);
+        box-shadow: 0 0 2px 0 $dim-gray;
+    }
+}

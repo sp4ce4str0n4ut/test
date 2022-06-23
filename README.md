@@ -1,18 +1,17 @@
-# Getting Started with Create React App
+# Test Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Attention!
 
-In the project directory, you can run:
+Please, run the project via given commands:
+### `npm json-server --watch db.json --port 3001`
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can change the port number if it is does not fit you.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Other
 
 ### `npm test`
 

@@ -1,0 +1,63 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/fonts';
+
+.card {
+    height: 416px;
+    width: 370px;
+    margin: 15px;
+    border: 1px solid $dim-gray;
+    border-radius: 10px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &_wrap {
+        height: 25%;
+        margin: 0 0 13% 13%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &_filter {
+        width: fit-content;
+        padding: 10px 15px 10px 10px;
+        background-color: $white;
+        border: none;
+        border-radius: 20px;
+        font-family: $font-epilogue-regular;
+        font-size: 16px;
+        color: $maroon;
+        display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+
+    &_title {
+        font-family: $font-epilogue-extrabold;
+        font-size: 40px;
+        color: $white;
+        display: flex;
+        justify-self: start;
+    }
+
+    &:after {
+        flex: auto;
+      }
+}
+
+.highlight {
+    box-shadow:inset 0px 0px 0px 3px $conifer;   
+}
+
+.deleted {
+    display: none;
+}
+
+@media (max-width: 1039px) {
+    .card {
+        width: 329px;
+        height: 416px;  
+    }    
+  }
